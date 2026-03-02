@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Chicken — A Collection of Timeless Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-label">A Culinary Journey</div>
+            <h1 class="hero-title">Spring Chicken</h1>
+            <p class="hero-subtitle">Eight timeless recipes celebrating tender, young poultry</p>
+        </div>
+        <div class="hero-decoration"></div>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro-content">
+                <p class="intro-text">
+                    Spring chicken, also known as poussin, represents the pinnacle of tenderness and delicate flavor.
+                    These young birds, typically 4-6 weeks old, have been celebrated in kitchens across the world
+                    for centuries. Here, we present a curated collection of recipes that honor both tradition and innovation.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Grid -->
+    <main class="recipes">
+        <div class="container">
+
+            <!-- Recipe 1 -->
+            <article class="recipe-card" data-recipe="1">
+                <div class="recipe-image">
+                    <div class="recipe-number">01</div>
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #d4a574 0%, #c89666 100%);">
+                        <span class="placeholder-text">Herb-Roasted Spring Chicken</span>
+                    </div>
+                </div>
+                <div class="recipe-content">
+                    <h2 class="recipe-title">Herb-Roasted Spring Chicken with Lemon & Thyme</h2>
+                    <p class="recipe-description">A classic preparation that lets the natural flavors shine. Fresh herbs, garlic, and bright lemon create an aromatic crust while keeping the meat incredibly moist.</p>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱ 1h 15min</span>
+                        <span class="meta-item">👥 2-3 servings</span>
+                        <span class="meta-item">🔥 Medium</span>
+                    </div>
+                    <button class="recipe-btn" onclick="toggleRecipe(1)">View Recipe</button>
+                    <div class="recipe-details" id="recipe-1">
+                        <div class="ingredients">
+                            <h3>Ingredients</h3>
+                            <ul>
+                                <li>1 spring chicken (about 500g)</li>
+                                <li>3 tbsp olive oil</li>
+                                <li>4 cloves garlic, minced</li>
+                                <li>Fresh thyme (6-8 sprigs)</li>
+                                <li>Fresh rosemary (2 sprigs)</li>
+                                <li>1 lemon, halved</li>
+                                <li>Salt and black pepper</li>
+                                <li>2 tbsp butter, softened</li>
+                            </ul>
+                        </div>
+                        <div class="instructions">
+                            <h3>Instructions</h3>
+                            <ol>
+                                <li>Preheat oven to 200°C (400°F).</li>
+                                <li>Pat chicken dry and season cavity with salt and pepper. Stuff with lemon halves and half the herbs.</li>
+                                <li>Mix butter with minced garlic and remaining chopped herbs. Rub under and over the skin.</li>
+                                <li>Drizzle with olive oil and season generously with salt and pepper.</li>
+                                <li>Roast for 45-55 minutes until golden and juices run clear (internal temp 74°C/165°F).</li>
+                                <li>Rest for 10 minutes before carving. Serve with pan juices.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 2 -->
+            <article class="recipe-card recipe-card-reverse" data-recipe="2">
+                <div class="recipe-image">
+                    <div class="recipe-number">02</div>
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #8b6f47 0%, #a0845c 100%);">
+                        <span class="placeholder-text">Honey Glazed Spring Chicken</span>
+                    </div>
+                </div>
+                <div class="recipe-content">
+                    <h2 class="recipe-title">Honey-Glazed Spring Chicken with Mustard</h2>
+                    <p class="recipe-description">Sweet meets savory in this caramelized masterpiece. The honey glaze creates a beautiful lacquered finish with a subtle tang from Dijon mustard.</p>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱ 1h</span>
+                        <span class="meta-item">👥 2 servings</span>
+                        <span class="meta-item">🔥 Easy</span>
+                    </div>
+                    <button class="recipe-btn" onclick="toggleRecipe(2)">View Recipe</button>
+                    <div class="recipe-details" id="recipe-2">
+                        <div class="ingredients">
+                            <h3>Ingredients</h3>
+                            <ul>
+                                <li>1 spring chicken (about 500g)</li>
+                                <li>3 tbsp honey</li>
+                                <li>2 tbsp Dijon mustard</li>
+                                <li>2 tbsp soy sauce</li>
+                                <li>2 cloves garlic, crushed</li>
+                                <li>1 tbsp apple cider vinegar</li>
+                                <li>1 tsp smoked paprika</li>
+                                <li>Salt and pepper</li>
+                            </ul>
+                        </div>
+                        <div class="instructions">
+                            <h3>Instructions</h3>
+                            <ol>
+                                <li>Preheat oven to 190°C (375°F).</li>
+                                <li>Whisk together honey, mustard, soy sauce, garlic, vinegar, and paprika.</li>
+                                <li>Pat chicken dry and season with salt and pepper.</li>
+                                <li>Brush half the glaze over the chicken, reserving the rest.</li>
+                                <li>Roast for 40 minutes, basting with remaining glaze every 15 minutes.</li>
+                                <li>Increase heat to 220°C (425°F) for final 5 minutes to caramelize.</li>
+                                <li>Rest for 5 minutes before serving with the pan glaze.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 3 -->
+            <article class="recipe-card" data-recipe="3">
+                <div class="recipe-image">
+                    <div class="recipe-number">03</div>
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #c97d60 0%, #d89579 100%);">
+                        <span class="placeholder-text">Mediterranean Spring Chicken</span>
+                    </div>
+                </div>
+                <div class="recipe-content">
+                    <h2 class="recipe-title">Mediterranean Spring Chicken with Olives & Tomatoes</h2>
+                    <p class="recipe-description">Transport yourself to the sun-drenched coasts with this vibrant one-pan wonder. Cherry tomatoes burst into a rich sauce while olives add briny depth.</p>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱ 1h 10min</span>
+                        <span class="meta-item">👥 2-3 servings</span>
+                        <span class="meta-item">🔥 Easy</span>
+                    </div>
+                    <button class="recipe-btn" onclick="toggleRecipe(3)">View Recipe</button>
+                    <div class="recipe-details" id="recipe-3">
+                        <div class="ingredients">
+                            <h3>Ingredients</h3>
+                            <ul>
+                                <li>1 spring chicken, spatchcocked</li>
+                                <li>300g cherry tomatoes</li>
+                                <li>100g Kalamata olives, pitted</li>
+                                <li>1 red onion, cut into wedges</li>
+                                <li>4 cloves garlic, whole</li>
+                                <li>2 tbsp olive oil</li>
+                                <li>1 tsp dried oregano</li>
+                                <li>Fresh basil for garnish</li>
+                                <li>Salt and pepper</li>
+                            </ul>
+                        </div>
+                        <div class="instructions">
+                            <h3>Instructions</h3>
+                            <ol>
+                                <li>Preheat oven to 200°C (400°F).</li>
+                                <li>In a large roasting pan, combine tomatoes, olives, onion, and garlic.</li>
+                                <li>Place spatchcocked chicken on top, skin-side up. Drizzle with olive oil.</li>
+                                <li>Season generously with salt, pepper, and oregano.</li>
+                                <li>Roast for 50-60 minutes until chicken is golden and cooked through.</li>
+                                <li>Let rest for 10 minutes, then garnish with fresh basil.</li>
+                                <li>Serve with crusty bread to soak up the delicious pan juices.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 4 -->
+            <article class="recipe-card recipe-card-reverse" data-recipe="4">
+                <div class="recipe-image">
+                    <div class="recipe-number">04</div>
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #9c8162 0%, #b39778 100%);">
+                        <span class="placeholder-text">Asian-Inspired Spring Chicken</span>
+                    </div>
+                </div>
+                <div class="recipe-content">
+                    <h2 class="recipe-title">Asian-Inspired Spring Chicken with Ginger & Soy</h2>
+                    <p class="recipe-description">Fragrant ginger, aromatic garlic, and umami-rich soy sauce create a marinade that penetrates every fiber. Finished with sesame oil for nutty depth.</p>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱ 1h 30min</span>
+                        <span class="meta-item">👥 2 servings</span>
+                        <span class="meta-item">🔥 Medium</span>
+                    </div>
+                    <button class="recipe-btn" onclick="toggleRecipe(4)">View Recipe</button>
+                    <div class="recipe-details" id="recipe-4">
+                        <div class="ingredients">
+                            <h3>Ingredients</h3>
+                            <ul>
+                                <li>1 spring chicken (about 500g)</li>
+                                <li>3 tbsp soy sauce</li>
+                                <li>2 tbsp rice wine or sherry</li>
+                                <li>2 tbsp honey</li>
+                                <li>3cm ginger, grated</li>
+                                <li>4 cloves garlic, minced</li>
+                                <li>2 tsp sesame oil</li>
+                                <li>2 green onions, sliced</li>
+                                <li>1 tsp five-spice powder (optional)</li>
+                                <li>Sesame seeds for garnish</li>
+                            </ul>
+                        </div>
+                        <div class="instructions">
+                            <h3>Instructions</h3>
+                            <ol>
+                                <li>Mix soy sauce, rice wine, honey, ginger, garlic, sesame oil, and five-spice.</li>
+                                <li>Marinate chicken for at least 1 hour (or overnight in fridge).</li>
+                                <li>Preheat oven to 190°C (375°F).</li>
+                                <li>Place chicken in roasting pan and pour marinade over.</li>
+                                <li>Roast for 50-60 minutes, basting every 20 minutes.</li>
+                                <li>Increase heat to 220°C (425°F) for final 10 minutes to crisp skin.</li>
+                                <li>Garnish with green onions and sesame seeds before serving.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 5 -->
+            <article class="recipe-card" data-recipe="5">
+                <div class="recipe-image">
+                    <div class="recipe-number">05</div>
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #a67c52 0%, #bf9168 100%);">
+                        <span class="placeholder-text">Garlic Butter Spring Chicken</span>
+                    </div>
+                </div>
+                <div class="recipe-content">
+                    <h2 class="recipe-title">Garlic Butter Spring Chicken with Herbs</h2>
+                    <p class="recipe-description">Indulgent and aromatic, this butter-basted bird is a celebration of simplicity. The garlic-herb butter creates a golden, crispy skin while keeping the meat succulent.</p>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱ 1h 20min</span>
+                        <span class="meta-item">👥 2-3 servings</span>
+                        <span class="meta-item">🔥 Easy</span>
+                    </div>
+                    <button class="recipe-btn" onclick="toggleRecipe(5)">View Recipe</button>
+                    <div class="recipe-details" id="recipe-5">
+                        <div class="ingredients">
+                            <h3>Ingredients</h3>
+                            <ul>
+                                <li>1 spring chicken (about 500g)</li>
+                                <li>100g butter, softened</li>
+                                <li>6 cloves garlic, minced</li>
+                                <li>2 tbsp fresh parsley, chopped</li>
+                                <li>1 tbsp fresh tarragon, chopped</li>
+                                <li>1 lemon, zested and juiced</li>
+                                <li>Salt and black pepper</li>
+                                <li>Fresh thyme sprigs</li>
+                            </ul>
+                        </div>
+                        <div class="instructions">
+                            <h3>Instructions</h3>
+                            <ol>
+                                <li>Preheat oven to 200°C (400°F).</li>
+                                <li>Mix softened butter with garlic, parsley, tarragon, lemon zest, salt, and pepper.</li>
+                                <li>Carefully loosen chicken skin and spread half the butter underneath.</li>
+                                <li>Rub remaining butter all over the outside. Stuff cavity with thyme and lemon halves.</li>
+                                <li>Roast for 50-60 minutes, basting with melted butter every 15 minutes.</li>
+                                <li>Rest for 10 minutes. Drizzle with lemon juice before serving.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 6 -->
+            <article class="recipe-card recipe-card-reverse" data-recipe="6">
+                <div class="recipe-image">
+                    <div class="recipe-number">06</div>
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #d4a259 0%, #e5b76a 100%);">
+                        <span class="placeholder-text">Spiced Spring Chicken</span>
+                    </div>
+                </div>
+                <div class="recipe-content">
+                    <h2 class="recipe-title">Moroccan-Spiced Spring Chicken with Apricots</h2>
+                    <p class="recipe-description">An exotic journey to North Africa with warming spices, sweet dried apricots, and toasted almonds. The chicken becomes wonderfully aromatic and tender.</p>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱ 1h 15min</span>
+                        <span class="meta-item">👥 2-3 servings</span>
+                        <span class="meta-item">🔥 Medium</span>
+                    </div>
+                    <button class="recipe-btn" onclick="toggleRecipe(6)">View Recipe</button>
+                    <div class="recipe-details" id="recipe-6">
+                        <div class="ingredients">
+                            <h3>Ingredients</h3>
+                            <ul>
+                                <li>1 spring chicken, spatchcocked</li>
+                                <li>2 tsp cumin</li>
+                                <li>2 tsp coriander</li>
+                                <li>1 tsp cinnamon</li>
+                                <li>1 tsp paprika</li>
+                                <li>100g dried apricots, halved</li>
+                                <li>50g slivered almonds, toasted</li>
+                                <li>2 tbsp olive oil</li>
+                                <li>2 tbsp honey</li>
+                                <li>Fresh cilantro for garnish</li>
+                                <li>Salt and pepper</li>
+                            </ul>
+                        </div>
+                        <div class="instructions">
+                            <h3>Instructions</h3>
+                            <ol>
+                                <li>Preheat oven to 190°C (375°F).</li>
+                                <li>Mix spices with salt, pepper, and olive oil to form a paste.</li>
+                                <li>Rub spice paste all over the spatchcocked chicken.</li>
+                                <li>Place in roasting pan and scatter apricots around.</li>
+                                <li>Roast for 45-50 minutes. Drizzle honey over chicken for last 10 minutes.</li>
+                                <li>Rest for 5 minutes, then garnish with toasted almonds and cilantro.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 7 -->
+            <article class="recipe-card" data-recipe="7">
+                <div class="recipe-image">
+                    <div class="recipe-number">07</div>
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #8d7456 0%, #a38968 100%);">
+                        <span class="placeholder-text">White Wine Spring Chicken</span>
+                    </div>
+                </div>
+                <div class="recipe-content">
+                    <h2 class="recipe-title">Spring Chicken in White Wine & Cream Sauce</h2>
+                    <p class="recipe-description">A French-inspired classic that's pure elegance. The chicken braises in white wine and cream, creating a luscious sauce perfect for spooning over mashed potatoes.</p>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱ 1h 30min</span>
+                        <span class="meta-item">👥 2-3 servings</span>
+                        <span class="meta-item">🔥 Advanced</span>
+                    </div>
+                    <button class="recipe-btn" onclick="toggleRecipe(7)">View Recipe</button>
+                    <div class="recipe-details" id="recipe-7">
+                        <div class="ingredients">
+                            <h3>Ingredients</h3>
+                            <ul>
+                                <li>1 spring chicken, jointed</li>
+                                <li>200ml dry white wine</li>
+                                <li>150ml heavy cream</li>
+                                <li>200g mushrooms, sliced</li>
+                                <li>2 shallots, finely chopped</li>
+                                <li>3 cloves garlic, minced</li>
+                                <li>2 tbsp butter</li>
+                                <li>2 tbsp olive oil</li>
+                                <li>Fresh tarragon</li>
+                                <li>Salt and white pepper</li>
+                            </ul>
+                        </div>
+                        <div class="instructions">
+                            <h3>Instructions</h3>
+                            <ol>
+                                <li>Season chicken pieces with salt and white pepper.</li>
+                                <li>Heat oil and butter in a large skillet. Brown chicken on all sides. Remove and set aside.</li>
+                                <li>In the same pan, sauté shallots and garlic until soft. Add mushrooms and cook until golden.</li>
+                                <li>Pour in white wine and scrape up browned bits. Reduce by half.</li>
+                                <li>Return chicken to pan, add cream and tarragon. Cover and simmer for 30-40 minutes.</li>
+                                <li>Uncover and reduce sauce until it coats the back of a spoon.</li>
+                                <li>Serve immediately with crusty bread or creamy mashed potatoes.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Recipe 8 -->
+            <article class="recipe-card recipe-card-reverse" data-recipe="8">
+                <div class="recipe-image">
+                    <div class="recipe-number">08</div>
+                    <div class="image-placeholder" style="background: linear-gradient(135deg, #b8916d 0%, #cca77f 100%);">
+                        <span class="placeholder-text">Citrus Spring Chicken</span>
+                    </div>
+                </div>
+                <div class="recipe-content">
+                    <h2 class="recipe-title">Citrus-Glazed Spring Chicken with Orange & Lime</h2>
+                    <p class="recipe-description">Bright, zesty, and utterly refreshing. The combination of orange and lime creates a tangy glaze that caramelizes beautifully, complementing the tender meat.</p>
+                    <div class="recipe-meta">
+                        <span class="meta-item">⏱ 1h 10min</span>
+                        <span class="meta-item">👥 2 servings</span>
+                        <span class="meta-item">🔥 Easy</span>
+                    </div>
+                    <button class="recipe-btn" onclick="toggleRecipe(8)">View Recipe</button>
+                    <div class="recipe-details" id="recipe-8">
+                        <div class="ingredients">
+                            <h3>Ingredients</h3>
+                            <ul>
+                                <li>1 spring chicken (about 500g)</li>
+                                <li>2 oranges (zest and juice)</li>
+                                <li>2 limes (zest and juice)</li>
+                                <li>3 tbsp honey</li>
+                                <li>2 tbsp olive oil</li>
+                                <li>3 cloves garlic, minced</li>
+                                <li>1 tsp coriander seeds, crushed</li>
+                                <li>Fresh cilantro for garnish</li>
+                                <li>Salt and pepper</li>
+                            </ul>
+                        </div>
+                        <div class="instructions">
+                            <h3>Instructions</h3>
+                            <ol>
+                                <li>Preheat oven to 190°C (375°F).</li>
+                                <li>Mix orange and lime zest and juice with honey, olive oil, garlic, and coriander.</li>
+                                <li>Reserve half the marinade. Coat chicken with the other half and marinate for 30 minutes.</li>
+                                <li>Place chicken in roasting pan. Roast for 50-60 minutes, basting with reserved marinade.</li>
+                                <li>Increase heat to 220°C (425°F) for final 5 minutes to caramelize the glaze.</li>
+                                <li>Rest for 5 minutes, garnish with cilantro and serve with lime wedges.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">A collection curated with care. Spring chicken represents culinary tradition at its finest.</p>
+            <p class="footer-credit">© 2026 Spring Chicken Recipes</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
