@@ -33,7 +33,9 @@ This website embodies an **editorial/magazine aesthetic** that combines:
 
 ## Deployment
 
-Deployed on GitHub Pages at: [Your GitHub Pages URL will appear here]
+🌐 **Live site:** https://idancohen11.github.io/spring-chicken-recipes/
+
+Deployed on GitHub Pages from the main branch.
 
 ## Local Development
 
